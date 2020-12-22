@@ -22,7 +22,7 @@ int main() {
 
 	generateSBox(state);
 
-	//BELT : Шифрование в режиме простой замены
+	//BELT : РЁРёС„СЂРѕРІР°РЅРёРµ РІ СЂРµР¶РёРјРµ РїСЂРѕСЃС‚РѕР№ Р·Р°РјРµРЅС‹
 	printf("BELT : Simple swap encryption mode\n\n");
 	memcpy(buf, getH(), 48);
 	for (int i = 0; i < 48; ++i) {
@@ -40,7 +40,7 @@ int main() {
 
 
 
-	//BELT : Шифрование в режиме соединения блоков
+	//BELT : РЁРёС„СЂРѕРІР°РЅРёРµ РІ СЂРµР¶РёРјРµ СЃРѕРµРґРёРЅРµРЅРёСЏ Р±Р»РѕРєРѕРІ
 	printf("BELT : Blocks connection encryption mode\n\n");
 	memcpy(buf, getH(), 48);
 	for (int i = 0; i < 48; ++i) {
@@ -58,7 +58,7 @@ int main() {
 
 
 
-	//BELT : Шифрование в режиме гаммирования с обратной связью
+	//BELT : РЁРёС„СЂРѕРІР°РЅРёРµ РІ СЂРµР¶РёРјРµ РіР°РјРјРёСЂРѕРІР°РЅРёСЏ СЃ РѕР±СЂР°С‚РЅРѕР№ СЃРІСЏР·СЊСЋ
 	printf("BELT : Gamma-reversed-connection encryption mode\n\n");
 	memcpy(buf, getH(), 48);
 	for (int i = 0; i < 48; ++i) {
